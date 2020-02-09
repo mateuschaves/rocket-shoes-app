@@ -1,7 +1,8 @@
 import React from 'react';
-import { View, StyleSheet, StatusBar } from 'react-native';
+import { View, StyleSheet, StatusBar, ScrollView } from 'react-native';
 
 import Header from '~/components/Header';
+import Product from '~/components/Product';
 
 export default function Main() {
   return (
@@ -9,6 +10,14 @@ export default function Main() {
       <StatusBar backgroundColor="#141419" />
       <Header />
 
+      <ScrollView alwaysBounceVertical horizontal>
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+      </ScrollView>
     </View>
   );
 }
